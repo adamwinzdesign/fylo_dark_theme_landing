@@ -16,8 +16,8 @@ const Content = () => {
 };
 
 const ContentContainer = styled.div`
-	min-height: 80vh;
 	width: 100%;
+	margin-top: 75px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
