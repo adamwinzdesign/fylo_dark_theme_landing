@@ -12,6 +12,12 @@ const P = styled.p`
 	font-style: normal;
 	font-weight: 400;
 	line-height: 30px;
+	&.features {
+		width: 349px;
+		margin-top: 0;
+		font-size: 14px;
+		line-height: 21px;
+	}
 `;
 
 export default P;
