@@ -29,7 +29,6 @@ const NavContain = styled.nav`
 	width: 1280px;
 	height: 52px;
 	margin: 80px 73px 0 73px;
-	border: 1px solid red;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

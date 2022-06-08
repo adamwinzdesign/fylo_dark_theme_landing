@@ -22,7 +22,6 @@ const ContentContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid green;
 `;
 
 export default Content;

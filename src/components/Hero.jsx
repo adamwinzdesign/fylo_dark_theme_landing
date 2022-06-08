@@ -11,6 +11,7 @@ const Hero = () => {
 				Fylo stores all your most important files in one secure location. Access them wherever you
 				need, share and collaborate with friends, family, and co-workers.
 			</P>
+			<Button>Get Started</Button>
 		</HeroContain>
 	);
 };
@@ -47,6 +48,19 @@ const P = styled.p`
 	color: ${white};
 	font-size: 20px;
 	font-family: "Open Sans", sans-serif;
-	/* font-weight: 400; */
+	font-weight: 400;
 	line-height: 30px;
+`;
+
+const Button = styled.button`
+	width: 280px;
+	height: 56px;
+	margin-top: 32px;
+	background: linear-gradient(138.1deg, #63e19b -49.34%, #34a0cd 100%);
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+	border-radius: 28px;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: ${white};
 `;
