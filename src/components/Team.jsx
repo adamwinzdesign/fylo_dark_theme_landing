@@ -5,18 +5,22 @@ import { cyan, dark_blue_testimonials, white } from "../colors";
 import { Link } from "react-scroll";
 import testimonialsData from "../utils/testimonialsData";
 import Section from "./shared/Section";
+import Img from "./shared/Img";
+import Container from "./shared/Container";
+import H2 from "./shared/type/H2";
+import P from "./shared/type/P";
 
 const Team = () => {
 	return (
 		<Section id='team' className='team'>
-			<Img src={stayProductive} alt='team collaboration' />
-			<TeamTextContain>
-				<H1>Stay productive, wherever you are.</H1>
-				<P>
+			<Img src={stayProductive} alt='team collaboration' className='team' />
+			<Container className='teamText'>
+				<H2 className='team'>Stay productive, wherever you are</H2>
+				<P className='team'>
 					Never let location be an issue when accessing your files. Fylo has you covered for all of
 					your file storage needs.
 				</P>
-				<P>
+				<P className='team'>
 					Securely share files and folders with friends, family and colleagues for live
 					collaboration. No email attachments required.
 				</P>
@@ -24,14 +28,14 @@ const Team = () => {
 					<StyledLink to='#'>See how Fylo works</StyledLink>
 					<CTAImg src={iconArrow} alt='arrow' />
 				</TeamLinkContain>
-			</TeamTextContain>
+			</Container>
 
 			<TestimonialsContain>
 				{testimonialsData.map((testimonial) => (
 					<TestimonialCard key={testimonial.name}>
 						<P className='testimonialText'>{testimonial.text}</P>
 						<ProfileImg src={testimonial.photo} alt='profile' />
-						<H1 className='testimonialName'>{testimonial.name}</H1>
+						<H2 className='testimonialName'>{testimonial.name}</H2>
 						<P className='testimonialPosition'>{testimonial.position}</P>
 					</TestimonialCard>
 				))}
@@ -41,49 +45,6 @@ const Team = () => {
 };
 
 export default Team;
-
-const Img = styled.img`
-	width: 615px;
-	height: 464px;
-`;
-
-const TeamTextContain = styled.div`
-	width: 563px;
-	height: 282px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
-`;
-
-const H1 = styled.h1`
-	font-family: "Raleway", sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	color: ${white};
-	&.testimonialName {
-		font-family: "Open Sans", sans-serif;
-		font-size: 10px;
-		font-weight: 700;
-	}
-`;
-
-const P = styled.p`
-	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	color: ${white};
-	&.testimonialText {
-		width: 310px;
-		font-family: "Open Sans", sans-serif;
-		font-size: 14px;
-		line-height: 21px;
-		font-style: normal;
-	}
-	&.testimonialPosition {
-		font-size: 7px;
-	}
-`;
 
 const TeamLinkContain = styled.div`
 	display: flex;

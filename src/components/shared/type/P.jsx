@@ -18,6 +18,22 @@ const P = styled.p`
 		font-size: 14px;
 		line-height: 21px;
 	}
+	&.team {
+		font-size: 16px;
+		text-align: left;
+		line-height: 24px;
+		margin-top: 16px;
+	}
+	&.testimonialText {
+		width: 310px;
+		font-size: 14px;
+		line-height: 21px;
+		font-style: normal;
+	}
+	&.testimonialPosition {
+		font-size: 8px;
+		line-height: 10px;
+	}
 `;
 
 export default P;
