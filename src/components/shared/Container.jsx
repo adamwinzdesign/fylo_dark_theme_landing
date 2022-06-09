@@ -36,6 +36,16 @@ const Container = styled.div`
 		display: flex;
 		justify-content: space-between;
 	}
+	&.testimonialProfile {
+		width: 120px;
+		margin-top: 24px;
+	}
+	&.testimonialInfo {
+		width: 100px;
+		flex-direction: column;
+		gap: 4px;
+		margin-left: 8px;
+	}
 `;
 
 export default Container;

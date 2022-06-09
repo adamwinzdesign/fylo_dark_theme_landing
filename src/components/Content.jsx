@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Features from "./Features";
 import Team from "./Team";
 import SignIn from "./SignIn";
+import Footer from "./Footer";
 
 const Content = () => {
 	return (
@@ -11,6 +12,7 @@ const Content = () => {
 			<Features />
 			<Team />
 			<SignIn />
+			<Footer />
 		</ContentContainer>
 	);
 };

@@ -33,11 +33,15 @@ const Team = () => {
 
 			<Container className='testimonialsContain'>
 				{testimonialsData.map((testimonial) => (
-					<Card key={testimonial.name}>
+					<Card key={testimonial.name} className='testimonialCard'>
 						<P className='testimonialText'>{testimonial.text}</P>
-						<Img src={testimonial.photo} alt='profile' className='testimonial' />
-						<H2 className='testimonialName'>{testimonial.name}</H2>
-						<P className='testimonialPosition'>{testimonial.position}</P>
+						<Container className='testimonialProfile'>
+							<Img src={testimonial.photo} alt='profile' className='testimonial' />
+							<Container className='testimonialInfo'>
+								<H2 className='testimonialName'>{testimonial.name}</H2>
+								<P className='testimonialPosition'>{testimonial.position}</P>
+							</Container>
+						</Container>
 					</Card>
 				))}
 			</Container>
