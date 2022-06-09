@@ -13,6 +13,11 @@ const Section = styled.section`
 		justify-content: space-between;
 		align-items: space-between;
 	}
+	&.team {
+		width: 1235px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 `;
 
 export default Section;

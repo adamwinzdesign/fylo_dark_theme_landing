@@ -4,10 +4,11 @@ import iconArrow from "../images/icon-arrow.svg";
 import { cyan, dark_blue_testimonials, white } from "../colors";
 import { Link } from "react-scroll";
 import testimonialsData from "../utils/testimonialsData";
+import Section from "./shared/Section";
 
 const Team = () => {
 	return (
-		<TeamContain id='team'>
+		<Section id='team' className='team'>
 			<Img src={stayProductive} alt='team collaboration' />
 			<TeamTextContain>
 				<H1>Stay productive, wherever you are.</H1>
@@ -35,16 +36,11 @@ const Team = () => {
 					</TestimonialCard>
 				))}
 			</TestimonialsContain>
-		</TeamContain>
+		</Section>
 	);
 };
 
 export default Team;
-
-const TeamContain = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-`;
 
 const Img = styled.img`
 	width: 615px;
@@ -120,8 +116,8 @@ const CTAImg = styled.img`
 `;
 
 const TestimonialsContain = styled.div`
+	width: 1160px;
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
 `;
 
