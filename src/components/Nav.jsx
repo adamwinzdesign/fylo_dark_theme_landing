@@ -1,14 +1,13 @@
-import styled from "styled-components";
+import Container from "./shared/Container";
 import logo from "../images/logo.svg";
-import { Link } from "react-scroll";
-import { white } from "../colors";
+import StyledLink from "./shared/StyledLink";
 
 const Nav = () => {
 	return (
-		<NavContain>
+		<Container className='navContain'>
 			<img src={logo} alt='Fylo' />
 
-			<Links>
+			<Container>
 				<StyledLink to='features' spy={true} smooth={true}>
 					Features
 				</StyledLink>
@@ -18,30 +17,9 @@ const Nav = () => {
 				<StyledLink to='signIn' spy={true} smooth={true}>
 					Sign In
 				</StyledLink>
-			</Links>
-		</NavContain>
+			</Container>
+		</Container>
 	);
 };
 
 export default Nav;
-
-const NavContain = styled.nav`
-	width: 1280px;
-	height: 52px;
-	margin: 80px 73px 0 73px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-`;
-
-const Links = styled.div`
-	display: flex;
-`;
-
-const StyledLink = styled(Link)`
-	font-family: "Raleway", sans-serif;
-	color: ${white};
-	font-size: 16px;
-	cursor: pointer;
-	margin-left: 55px;
-`;

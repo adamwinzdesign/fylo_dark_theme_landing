@@ -24,13 +24,13 @@ const Team = () => {
 					Securely share files and folders with friends, family and colleagues for live
 					collaboration. No email attachments required.
 				</P>
-				<TeamLinkContain>
+				<Container className='teamLinkContain'>
 					<StyledLink to='#'>See how Fylo works</StyledLink>
 					<CTAImg src={iconArrow} alt='arrow' />
-				</TeamLinkContain>
+				</Container>
 			</Container>
 
-			<TestimonialsContain>
+			<Container className='testimonialsContain'>
 				{testimonialsData.map((testimonial) => (
 					<TestimonialCard key={testimonial.name}>
 						<P className='testimonialText'>{testimonial.text}</P>
@@ -39,24 +39,12 @@ const Team = () => {
 						<P className='testimonialPosition'>{testimonial.position}</P>
 					</TestimonialCard>
 				))}
-			</TestimonialsContain>
+			</Container>
 		</Section>
 	);
 };
 
 export default Team;
-
-const TeamLinkContain = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-bottom: 1px solid ${cyan};
-	padding-bottom: 4px;
-	cursor: pointer;
-	&:hover {
-		border-bottom: 1px solid ${white};
-	}
-`;
 
 const StyledLink = styled(Link)`
 	font-family: "Open Sans", sans-serif;
@@ -74,12 +62,6 @@ const CTAImg = styled.img`
 	margin-left: 8px;
 	border-radius: 50%;
 	box-shadow: 0px 0px 2px rgba(98, 224, 217, 0.811141);
-`;
-
-const TestimonialsContain = styled.div`
-	width: 1160px;
-	display: flex;
-	justify-content: space-between;
 `;
 
 const TestimonialCard = styled.div`
