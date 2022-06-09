@@ -29,6 +29,7 @@ const P = styled.p`
 		font-size: 14px;
 		line-height: 21px;
 		font-style: normal;
+		text-align: left;
 	}
 	&.testimonialPosition {
 		font-size: 8px;
