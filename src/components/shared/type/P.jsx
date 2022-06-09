@@ -5,7 +5,6 @@ const P = styled.p`
 	/* base styles for Hero */
 	color: ${white};
 	width: 589px;
-	/* margin-top: 32px; */
 	text-align: center;
 	font-size: 20px;
 	font-family: "Open Sans", sans-serif;
@@ -14,7 +13,6 @@ const P = styled.p`
 	line-height: 30px;
 	&.features {
 		width: 349px;
-		/* margin-top: 0; */
 		font-size: 14px;
 		line-height: 21px;
 	}
@@ -38,6 +36,11 @@ const P = styled.p`
 		text-align: left;
 		font-size: 8px;
 		line-height: 10px;
+	}
+	&.signIn {
+		width: 673px;
+		font-size: 14px;
+		line-height: 21px;
 	}
 `;
 

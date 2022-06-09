@@ -14,6 +14,10 @@ const H2 = styled.h2`
 	&.testimonialName {
 		font-size: 10px;
 	}
+	&.signIn {
+		font-size: 32px;
+		line-height: 48px;
+	}
 `;
 
 export default H2;

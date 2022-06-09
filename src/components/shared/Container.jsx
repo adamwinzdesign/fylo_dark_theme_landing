@@ -46,6 +46,19 @@ const Container = styled.div`
 		gap: 4px;
 		margin-left: 8px;
 	}
+	&.signIn {
+		height: 275px;
+		width: 863px;
+		padding: 42px 75px;
+		border-radius: 9px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&.signInForm {
+		width: 100%;
+		justify-content: space-between;
+	}
 `;
 
 export default Container;
