@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cyan } from "../../colors";
+import { cyan, dark_blue_footer } from "../../colors";
 import { white } from "../../colors";
 
 const Container = styled.div`
@@ -55,9 +55,21 @@ const Container = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
-	&.signInForm {
+	&.footer {
+		flex-direction: column;
 		width: 100%;
-		justify-content: space-between;
+		height: 441px;
+		background-color: ${dark_blue_footer};
+		padding: 170px 120px 0 120px;
+	}
+	&.footerLogo {
+		width: 100%;
+	}
+	&.footerContent {
+		width: 100%;
+		border: 1px solid red;
+	}
+	&.footerText {
 	}
 `;
 

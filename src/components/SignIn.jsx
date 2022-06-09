@@ -1,6 +1,9 @@
 import { useState } from "react";
 import * as yup from "yup";
 import Container from "./shared/Container";
+import Form from "./shared/Form";
+import GradientLink from "./shared/GradientLink";
+import Input from "./shared/Input";
 import H2 from "./shared/type/H2";
 import P from "./shared/type/P";
 
@@ -52,18 +55,22 @@ const SignIn = () => {
 				It only takes a minute to sign up and our free starter tier is extremely generous. If you
 				have any questions, our support team would be happy to help you.
 			</P>
-			<Container className='signInForm'>
-				<form>
+			<Container>
+				<Form>
 					<label htmlFor='email'>
-						<input
+						<Input
 							autoComplete='email'
 							type='email'
 							name='email'
 							value={formState.email}
 							onChange={inputChange}
 						/>
+						{errors.email && <P className='error'>{errors.email}</P>}
 					</label>
-				</form>
+					<GradientLink to='signIn' spy={true} smooth={true} className='signIn'>
+						Get Started For Free
+					</GradientLink>
+				</Form>
 			</Container>
 		</Container>
 	);

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { white } from "../../../colors";
+import { light_red, white } from "../../../colors";
 
 const P = styled.p`
 	/* base styles for Hero */
@@ -41,6 +41,16 @@ const P = styled.p`
 		width: 673px;
 		font-size: 14px;
 		line-height: 21px;
+	}
+	&.error {
+		font-size: 10px;
+		font-weight: 700;
+		color: ${light_red};
+	}
+	&.footerText {
+		width: 339px;
+		font-size: 16px;
+		text-align: left;
 	}
 `;
 

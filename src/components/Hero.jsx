@@ -8,7 +8,7 @@ import P from "./shared/type/P";
 const Hero = () => {
 	return (
 		<Section id='hero'>
-			<Img src={illustrationIntro} alt='page introduction' />
+			<Img src={illustrationIntro} alt='page introduction' className='hero' />
 			<H1>All your files in one secure location, accessible anywhere.</H1>
 			<P>
 				Fylo stores all your most important files in one secure location. Access them wherever you

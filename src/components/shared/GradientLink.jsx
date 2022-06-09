@@ -16,6 +16,12 @@ const GradientLink = styled(Link)`
 	font-size: 16px;
 	font-weight: 700;
 	color: ${white};
+	&.signIn {
+		margin: 0;
+		width: 200px;
+		height: 48px;
+		font-size: 14px;
+	}
 `;
 
 export default GradientLink;

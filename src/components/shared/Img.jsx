@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const Img = styled.img`
-	/* initial for Hero */
-	height: 534px;
-	width: 720px;
+	&.hero {
+		height: 534px;
+		width: 720px;
+	}
 	&.ctaImg {
 		height: 12px;
 		width: 12px;
@@ -19,6 +20,15 @@ const Img = styled.img`
 		height: 24px;
 		width: 24px;
 		border-radius: 50%;
+	}
+	&.footerLogo {
+		height: 31px;
+		width: 108px;
+	}
+	&.footerLocation {
+		height: 18px;
+		width: 13px;
+		margin-right: 50px;
 	}
 `;
 
