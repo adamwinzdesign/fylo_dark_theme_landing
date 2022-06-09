@@ -30,6 +30,15 @@ const Img = styled.img`
 		width: 13px;
 		margin-right: 50px;
 	}
+	&.footerPhone {
+		height: 18px;
+		width: 18px;
+		/* margin-right: 50px; */
+	}
+	&.footerEmail {
+		height: 16px;
+		width: 20px;
+	}
 `;
 
 export default Img;

@@ -52,6 +52,11 @@ const P = styled.p`
 		font-size: 16px;
 		text-align: left;
 	}
+	&.contactText {
+		/* width: 110px; */
+		font-size: 14px;
+		line-height: 21px;
+	}
 `;
 
 export default P;

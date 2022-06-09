@@ -71,6 +71,10 @@ const Container = styled.div`
 	}
 	&.footerText {
 	}
+	&.footerContact {
+		flex-direction: column;
+		border: 1px solid green;
+	}
 `;
 
 export default Container;
