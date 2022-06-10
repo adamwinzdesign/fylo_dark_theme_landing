@@ -8,8 +8,6 @@ import { navLogo } from "../utils/svgData";
 const Nav = () => {
 	return (
 		<Container className='navContain'>
-			{/* <img src={logo} alt='Fylo' /> */}
-
 			<MotionSVGHover pathData={navLogo} />
 
 			<Container>
