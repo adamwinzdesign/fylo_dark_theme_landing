@@ -53,7 +53,7 @@ const P = styled.p`
 		text-align: left;
 	}
 	&.contactText {
-		/* width: 110px; */
+		width: 110px;
 		font-size: 14px;
 		line-height: 21px;
 	}

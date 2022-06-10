@@ -1,10 +1,14 @@
 import Container from "./shared/Container";
+import StyledLink from "./shared/StyledLink";
 import logo from "../images/logo.svg";
 import Img from "./shared/Img";
 import location from "../images/icon-location.svg";
 import phone from "../images/icon-phone.svg";
 import email from "../images/icon-email.svg";
 import P from "./shared/type/P";
+import facebook from "../images/facebook.svg";
+import twitter from "../images/twitter.svg";
+import instagram from "../images/instagram.svg";
 
 const Footer = () => {
 	return (
@@ -13,7 +17,7 @@ const Footer = () => {
 				<Img src={logo} alt='fylo' className='footerLogo' />
 			</Container>
 			<Container className='footerContent'>
-				<Container className='footerText'>
+				<Container>
 					<Img src={location} alt='location' className='footerLocation' />
 					<P className='footerText'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -30,8 +34,38 @@ const Footer = () => {
 						<P className='contactText'>example@fylo.com</P>
 					</Container>
 				</Container>
-				<Container className='footerLinks'></Container>
-				<Container className='footerSocial'></Container>
+				<Container className='footerLinks'>
+					<Container className='footerLinksCol'>
+						<StyledLink to='team' spy={true} smooth={true}>
+							About Us
+						</StyledLink>
+						<StyledLink to='hero' spy={true} smooth={true}>
+							Jobs
+						</StyledLink>
+						<StyledLink to='team' spy={true} smooth={true}>
+							Press
+						</StyledLink>
+						<StyledLink to='features' spy={true} smooth={true}>
+							Blog
+						</StyledLink>
+					</Container>
+					<Container className='footerLinksCol'>
+						<StyledLink to='team' spy={true} smooth={true}>
+							Contact Us
+						</StyledLink>
+						<StyledLink to='hero' spy={true} smooth={true}>
+							Terms
+						</StyledLink>
+						<StyledLink to='team' spy={true} smooth={true}>
+							Privacy
+						</StyledLink>
+					</Container>
+				</Container>
+				<Container className='footerSocial'>
+					<Img src={facebook} alt='facebook' />
+					<Img src={twitter} alt='twitter' />
+					<Img src={instagram} alt='instagram' />
+				</Container>
 			</Container>
 		</Container>
 	);

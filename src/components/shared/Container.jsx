@@ -69,11 +69,19 @@ const Container = styled.div`
 		width: 100%;
 		border: 1px solid red;
 	}
-	&.footerText {
-	}
 	&.footerContact {
 		flex-direction: column;
 		border: 1px solid green;
+	}
+	&.footerLinks {
+		width: 230px;
+	}
+	&.footerLinksCol {
+		flex-direction: column;
+	}
+	&.footerSocial {
+		height: 31px;
+		color: ${white};
 	}
 `;
 
