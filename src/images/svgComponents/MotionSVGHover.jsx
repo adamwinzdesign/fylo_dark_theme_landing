@@ -5,17 +5,18 @@ import { hoverSVG } from "../../utils/animations";
 
 const MotionSVGHover = ({ pathData }) => {
 	const [hovering, setHovering] = useState(false);
+	console.log(pathData.paths);
 
 	return (
 		<MotionSVG
-			style={{ width: pathData[0].width, height: pathData[0].height }}
-			viewBox={pathData[0].viewBox}
+			style={{ width: pathData.width, height: pathData.height }}
+			viewBox={pathData.viewBox}
 			initial='notHovering'
 			animate={hovering ? "hovering" : "notHovering"}
 			onMouseEnter={() => setHovering(true)}
 			onMouseLeave={() => setHovering(false)}
 		>
-			{pathData.map((path) => (
+			{pathData.paths.map((path) => (
 				<MotionPath key={path.d} d={path.d} variants={hoverSVG} />
 			))}
 		</MotionSVG>

@@ -1,5 +1,4 @@
 import Container from "./shared/Container";
-import logo from "../images/logo.svg";
 import StyledLink from "./shared/StyledLink";
 
 import MotionSVGHover from "../images/svgComponents/MotionSVGHover";
