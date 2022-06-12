@@ -5,7 +5,6 @@ import { hoverSVG } from "../../utils/animations";
 
 const MotionSVGHover = ({ pathData }) => {
 	const [hovering, setHovering] = useState(false);
-	console.log(pathData.paths);
 
 	return (
 		<MotionSVG
@@ -17,7 +16,12 @@ const MotionSVGHover = ({ pathData }) => {
 			onMouseLeave={() => setHovering(false)}
 		>
 			{pathData.paths.map((path) => (
-				<MotionPath key={path.d} d={path.d} variants={hoverSVG} />
+				<MotionPath
+					key={path.d}
+					d={path.d}
+					variants={hoverSVG}
+					custom={{ renderStroke: pathData.renderStroke, strokeWidth: pathData.strokeWidth }}
+				/>
 			))}
 		</MotionSVG>
 	);

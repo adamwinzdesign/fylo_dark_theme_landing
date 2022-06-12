@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { white } from "../../colors";
 
 const Img = styled.img`
 	&.hero {
@@ -34,7 +33,6 @@ const Img = styled.img`
 	&.footerPhone {
 		height: 18px;
 		width: 18px;
-		/* margin-right: 50px; */
 	}
 	&.footerEmail {
 		height: 16px;
