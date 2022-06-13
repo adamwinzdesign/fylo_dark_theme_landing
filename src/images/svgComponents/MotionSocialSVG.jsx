@@ -1,14 +1,15 @@
 import { useState } from "react";
-import MotionSVG from "./MotionSVG";
-import MotionPath from "./MotionPath";
+import { motion } from "framer-motion";
 import { hoverSVG } from "../../utils/animations";
+import { socialIconCircle } from "../../utils/svgData";
 
-const MotionSVGHover = ({ pathData }) => {
+const MotionSocialSVG = ({ pathData }) => {
 	const [hovering, setHovering] = useState(false);
+
 	const { width, height, viewBox, paths, renderStroke, strokeWidth } = pathData;
 
 	return (
-		<MotionSVG
+		<motion.svg
 			style={{ width, height }}
 			viewBox={viewBox}
 			initial='notHovering'
@@ -16,16 +17,15 @@ const MotionSVGHover = ({ pathData }) => {
 			onMouseEnter={() => setHovering(true)}
 			onMouseLeave={() => setHovering(false)}
 		>
-			{paths.map((path) => (
-				<MotionPath
-					key={path.d}
-					d={path.d}
-					variants={hoverSVG}
-					custom={{ renderStroke, strokeWidth }}
-				/>
-			))}
-		</MotionSVG>
+			<motion.path d={paths[0].d} variants={hoverSVG} custom={{ renderStroke, strokeWidth }} />
+			<motion.path
+				d={socialIconCircle.paths[0].d}
+				variants={hoverSVG}
+				style={{ fill: "none" }}
+				custom={{ renderStroke, strokeWidth }}
+			/>
+		</motion.svg>
 	);
 };
 
-export default MotionSVGHover;
+export default MotionSocialSVG;

@@ -2,13 +2,12 @@ import Container from "./shared/Container";
 import StyledLink from "./shared/StyledLink";
 
 import MotionSVGHover from "../images/svgComponents/MotionSVGHover";
-import { navLogo, security } from "../utils/svgData";
+import { navLogo } from "../utils/svgData";
 
 const Nav = () => {
 	return (
 		<Container className='navContain'>
 			<MotionSVGHover pathData={navLogo} />
-			<MotionSVGHover pathData={security} />
 
 			<Container>
 				<StyledLink to='features' spy={true} smooth={true}>
