@@ -2,9 +2,9 @@ import { cyan, white } from "../colors";
 
 export const hoverSVG = {
 	hovering: (custom) => ({
-		fill: [white, cyan],
-		fillOpacity: custom.renderStroke ? 0 : [1, 0, 0, 1],
-		stroke: [white, cyan],
+		fill: custom.fill ? [custom.fill, cyan] : "transparent",
+		fillOpacity: custom.fill ? [1, 0, 0, 1] : 0,
+		stroke: custom.stroke ? [custom.stroke, cyan] : null,
 		pathLength: [1.1, 0, 1.1],
 		transition: {
 			fill: {
@@ -24,9 +24,10 @@ export const hoverSVG = {
 		},
 	}),
 	notHovering: (custom) => ({
-		fill: white,
-		fillOpacity: custom.renderStroke ? 0 : 1,
-		stroke: white,
+		fill: custom.fill ? custom.fill : "transparent",
+		fillOpacity: custom.fill ? 0 : 1,
+		stroke: custom.stroke ? custom.stroke : "transparent",
+		strokeWidth: custom.strokeWidth,
 		transition: { duration: 1 },
 	}),
 };

@@ -6,7 +6,8 @@ import { socialIconCircle } from "../../utils/svgData";
 const MotionSocialSVG = ({ pathData }) => {
 	const [hovering, setHovering] = useState(false);
 
-	const { width, height, viewBox, paths, renderStroke, strokeWidth } = pathData;
+	const { width, height, viewBox, paths, strokeWidth } = pathData;
+	const circlePath = socialIconCircle.paths[0];
 
 	return (
 		<motion.svg
@@ -17,12 +18,14 @@ const MotionSocialSVG = ({ pathData }) => {
 			onMouseEnter={() => setHovering(true)}
 			onMouseLeave={() => setHovering(false)}
 		>
-			<motion.path d={paths[0].d} variants={hoverSVG} custom={{ renderStroke, strokeWidth }} />
 			<motion.path
-				d={socialIconCircle.paths[0].d}
+				d={circlePath.d}
 				variants={hoverSVG}
-				style={{ fill: "none" }}
-				custom={{ renderStroke, strokeWidth }}
+				custom={{
+					stroke: circlePath.stroke,
+					strokeWidth: circlePath.strokeWidth,
+					fill: circlePath.fill,
+				}}
 			/>
 		</motion.svg>
 	);
