@@ -9,7 +9,10 @@ const StyledLink = styled(Link)`
 	color: ${white};
 	font-size: 16px;
 	cursor: pointer;
-	margin-left: 55px;
+	/* margin-left: 55px; */
+	@media (max-width: 375px) {
+		font-size: 12px;
+	}
 	&.teamLink {
 		font-family: "Open Sans", sans-serif;
 		color: ${cyan};

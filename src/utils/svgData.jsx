@@ -44,8 +44,8 @@ export const instagram = {
 };
 
 export const navLogo = {
-	width: "176px",
-	height: "52px",
+	// width: "176px",
+	// height: "52px",
 	viewBox: logoViewBox,
 	paths: [
 		{

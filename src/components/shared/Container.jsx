@@ -8,9 +8,11 @@ const Container = styled.div`
 		width: 1280px;
 		height: 52px;
 		margin: 80px 73px 0 73px;
-		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@media (max-width: 375px) {
+			width: 100%;
+		}
 	}
 	&.teamText {
 		width: 563px;

@@ -65,11 +65,6 @@ const Footer = () => {
 					</Container>
 				</Container>
 				<Container className='footerSocial'>
-					{/* <Img src={facebook} alt='facebook' /> */}
-					{/* <Img src={twitter} alt='twitter' /> */}
-					{/* <Img src={instagram} alt='instagram' /> */}
-					{/* <MotionSVGHover pathData={twitter} /> */}
-					{/* <MotionSVGHover pathData={socialIconCircle} /> */}
 					<MotionSocialSVG pathData={facebook} />
 					<MotionSocialSVG pathData={twitter} />
 					<MotionSocialSVG pathData={instagram} />

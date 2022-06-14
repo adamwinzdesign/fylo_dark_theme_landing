@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const MotionPath = ({ d, variants, style, custom }) => {
-	console.log(custom);
 	return <Path d={d} variants={variants} style={style} custom={custom} />;
 };
 
