@@ -5,11 +5,10 @@ import { hoverSVG } from "../../utils/animations";
 
 const MotionSVGHover = ({ pathData }) => {
 	const [hovering, setHovering] = useState(false);
-	const { width, height, viewBox, paths, renderStroke, strokeWidth } = pathData;
+	const { viewBox, paths } = pathData;
 
 	return (
 		<MotionSVG
-			style={{ width, height }}
 			viewBox={viewBox}
 			initial='notHovering'
 			animate={hovering ? "hovering" : "notHovering"}
@@ -21,7 +20,7 @@ const MotionSVGHover = ({ pathData }) => {
 					key={path.d}
 					d={path.d}
 					variants={hoverSVG}
-					custom={{ renderStroke, strokeWidth }}
+					custom={{ stroke: path.stroke, strokeWidth: path.strokeWidth, fill: path.fill }}
 				/>
 			))}
 		</MotionSVG>
