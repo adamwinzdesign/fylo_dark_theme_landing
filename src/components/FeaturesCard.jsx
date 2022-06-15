@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FeaturesCard = styled.div`
-	width: 349px;
+	width: 363px;
 	height: 214px;
 	display: flex;
 	flex-direction: column;

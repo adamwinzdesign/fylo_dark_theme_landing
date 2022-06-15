@@ -5,12 +5,18 @@ const P = styled.p`
 	/* base styles for Hero */
 	color: ${white};
 	width: 589px;
+	margin-top: 32px;
 	text-align: center;
 	font-size: 20px;
 	font-family: "Open Sans", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 30px;
+	@media (max-width: 375px) {
+		width: 296px;
+		font-size: 14px;
+		line-height: 21px;
+	}
 	&.features {
 		width: 349px;
 		font-size: 14px;

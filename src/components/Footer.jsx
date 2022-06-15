@@ -6,11 +6,7 @@ import location from "../images/icon-location.svg";
 import phone from "../images/icon-phone.svg";
 import email from "../images/icon-email.svg";
 import P from "./shared/type/P";
-// import facebook from "../images/facebook.svg";
-// import twitter from "../images/twitter.svg";
-// import instagram from "../images/instagram.svg";
-import MotionSVGHover from "../images/svgComponents/MotionSVGHover";
-import { socialIconCircle, instagram, twitter, facebook } from "../utils/svgData";
+import { instagram, twitter, facebook } from "../utils/svgData";
 import MotionSocialSVG from "../images/svgComponents/MotionSocialSVG";
 
 const Footer = () => {
