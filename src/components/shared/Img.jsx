@@ -4,6 +4,11 @@ const Img = styled.img`
 	&.hero {
 		height: 534px;
 		width: 720px;
+		border: 1px solid red;
+		@media (max-width: 375px) {
+			height: 225px;
+			width: 304px;
+		}
 	}
 	&.ctaImg {
 		height: 12px;

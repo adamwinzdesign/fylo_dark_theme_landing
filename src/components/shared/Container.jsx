@@ -9,10 +9,12 @@ const Container = styled.div`
 		min-width: 90%;
 		height: 52px;
 		margin: 0 auto;
+		margin-top: 73px;
 		align-items: center;
 		justify-content: space-between;
 		@media (max-width: 375px) {
 			height: 24px;
+			margin-top: 24px;
 		}
 	}
 	&.navLogo {
@@ -21,6 +23,15 @@ const Container = styled.div`
 	&.navLinks {
 		display: flex;
 		gap: 60px;
+		@media (max-width: 375px) {
+			gap: 24px;
+		}
+	}
+	&.allContent {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 	&.teamText {
 		width: 563px;
@@ -91,7 +102,7 @@ const Container = styled.div`
 	}
 	&.footerSocial {
 		height: 31px;
-		color: ${white};
+		/* color: ${white}; */
 	}
 `;
 

@@ -7,7 +7,7 @@ import P from "./shared/type/P";
 
 const Hero = () => {
 	return (
-		<Section id='hero'>
+		<Section id='hero' className='hero'>
 			<Img src={illustrationIntro} alt='page introduction' className='hero' />
 			<H1>All your files in one secure location, accessible anywhere.</H1>
 			<P>
