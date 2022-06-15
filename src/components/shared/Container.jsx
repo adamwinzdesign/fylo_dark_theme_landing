@@ -4,15 +4,23 @@ import { white } from "../../colors";
 
 const Container = styled.div`
 	display: flex;
+	overflow: hidden;
 	&.navContain {
-		width: 1280px;
+		min-width: 90%;
 		height: 52px;
-		margin: 80px 73px 0 73px;
+		margin: 0 auto;
 		align-items: center;
 		justify-content: space-between;
 		@media (max-width: 375px) {
-			width: 100%;
+			height: 24px;
 		}
+	}
+	&.navLogo {
+		height: 100%;
+	}
+	&.navLinks {
+		display: flex;
+		gap: 60px;
 	}
 	&.teamText {
 		width: 563px;

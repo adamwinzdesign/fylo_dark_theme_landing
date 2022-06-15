@@ -7,9 +7,11 @@ import { navLogo } from "../utils/svgData";
 const Nav = () => {
 	return (
 		<Container className='navContain'>
-			<MotionSVGHover pathData={navLogo} />
+			<Container className='navLogo'>
+				<MotionSVGHover pathData={navLogo} />
+			</Container>
 
-			<Container>
+			<Container className='navLinks'>
 				<StyledLink to='features' spy={true} smooth={true}>
 					Features
 				</StyledLink>

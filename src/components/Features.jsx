@@ -10,7 +10,11 @@ const Features = () => {
 		<Section id='features' className='features'>
 			{featuresData.map((feature) => (
 				<FeaturesCard key={feature.headline}>
-					<MotionSVGHover pathData={feature.pathData} />
+					{feature.pathData ? (
+						<MotionSVGHover pathData={feature.pathData} />
+					) : (
+						<img src={feature.icon} alt={feature.headline} />
+					)}
 					<H2>{feature.headline}</H2>
 					<P className='features'>{feature.body}</P>
 				</FeaturesCard>
