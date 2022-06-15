@@ -18,7 +18,8 @@ const P = styled.p`
 		line-height: 21px;
 	}
 	&.features {
-		width: 349px;
+		margin: 0;
+		width: 384px;
 		font-size: 14px;
 		line-height: 21px;
 	}
@@ -30,6 +31,7 @@ const P = styled.p`
 	}
 	&.testimonialText {
 		width: 310px;
+		margin-left: 24px;
 		font-size: 14px;
 		line-height: 21px;
 		font-style: normal;

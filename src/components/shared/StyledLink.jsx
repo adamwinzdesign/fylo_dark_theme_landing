@@ -18,6 +18,7 @@ const StyledLink = styled(Link)`
 		font-size: 16px;
 		font-weight: 400;
 		margin-left: 0;
+		margin-top: 24px;
 		&:hover {
 			color: ${white};
 		}

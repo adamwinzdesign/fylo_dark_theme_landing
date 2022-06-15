@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { white } from "../../colors";
 
 const Img = styled.img`
 	&.hero {
@@ -19,6 +20,11 @@ const Img = styled.img`
 	&.team {
 		width: 615px;
 		height: 464px;
+	}
+	&.quotation {
+		position: absolute;
+		bottom: 72%;
+		left: 1%;
 	}
 	&.testimonial {
 		height: 24px;

@@ -53,13 +53,19 @@ const Container = styled.div`
 		}
 	}
 	&.testimonialsContain {
-		width: 1160px;
+		position: relative;
+		margin-top: 120px;
+		height: 259px;
+		width: 1180px;
 		display: flex;
-		justify-content: space-between;
+		align-items: flex-end;
+		justify-content: flex-end;
+		gap: 40px;
 	}
 	&.testimonialProfile {
 		width: 120px;
 		margin-top: 24px;
+		margin-left: 24px;
 	}
 	&.testimonialInfo {
 		width: 100px;

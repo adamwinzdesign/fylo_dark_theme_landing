@@ -24,6 +24,7 @@ const Section = styled.section`
 		align-items: space-between;
 	}
 	&.team {
+		margin-top: 127px;
 		width: 1235px;
 		flex-direction: row;
 		flex-wrap: wrap;

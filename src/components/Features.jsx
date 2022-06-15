@@ -15,7 +15,7 @@ const Features = () => {
 					) : (
 						<img src={feature.icon} alt={feature.headline} />
 					)}
-					<H2>{feature.headline}</H2>
+					<H2 className='features'>{feature.headline}</H2>
 					<P className='features'>{feature.body}</P>
 				</FeaturesCard>
 			))}

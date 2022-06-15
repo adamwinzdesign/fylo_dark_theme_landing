@@ -1,5 +1,6 @@
 import stayProductive from "../images/illustration-stay-productive.png";
 import StyledLink from "./shared/StyledLink";
+import quotes from "../images/bg-quotes.png";
 import iconArrow from "../images/icon-arrow.svg";
 import testimonialsData from "../utils/testimonialsData";
 import Section from "./shared/Section";
@@ -26,14 +27,15 @@ const Team = () => {
 				<Container className='teamLinkContain'>
 					<StyledLink to='signIn' className='teamLink'>
 						See how Fylo works
+						<Img src={iconArrow} alt='arrow' className='ctaImg' />
 					</StyledLink>
-					<Img src={iconArrow} alt='arrow' className='ctaImg' />
 				</Container>
 			</Container>
 
 			<Container className='testimonialsContain'>
+				<Img src={quotes} alt='quote' className='quotation' />
 				{testimonialsData.map((testimonial) => (
-					<Card key={testimonial.name} className='testimonialCard'>
+					<Card key={testimonial.name}>
 						<P className='testimonialText'>{testimonial.text}</P>
 						<Container className='testimonialProfile'>
 							<Img src={testimonial.photo} alt='profile' className='testimonial' />

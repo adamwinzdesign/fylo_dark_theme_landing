@@ -10,9 +10,7 @@ const Card = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between; */
-	&.testimonialCard {
-		padding: 40px 26px;
-	}
+	z-index: 2;
 `;
 
 export default Card;
