@@ -9,7 +9,6 @@ const FeaturesCard = styled.div`
 	align-items: center;
 	text-align: center;
 	@media (max-width: 375px) {
-		/* height: auto; */
 		max-width: 320px;
 		margin-bottom: 80px;
 	}

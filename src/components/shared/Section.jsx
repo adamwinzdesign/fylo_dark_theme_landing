@@ -23,6 +23,9 @@ const Section = styled.section`
 		justify-content: space-between;
 		align-items: space-between;
 		@media (max-width: 375px) {
+			min-height: 1036px;
+			max-width: 320px;
+			margin-top: 130px;
 			flex-direction: column;
 			flex-wrap: nowrap;
 		}
@@ -32,6 +35,10 @@ const Section = styled.section`
 		width: 1235px;
 		flex-direction: row;
 		flex-wrap: wrap;
+		@media (max-width: 375px) {
+			margin: 0;
+			max-width: 320px;
+		}
 	}
 `;
 

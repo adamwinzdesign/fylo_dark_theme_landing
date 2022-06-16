@@ -7,11 +7,15 @@ const H2 = styled.h2`
 	font-weight: 700;
 	color: ${white};
 	&.features {
-		margin: 16px 0 8px 0;
+		margin: 18px 0 8px 0;
 	}
 	&.team {
 		width: 506px;
 		font-size: 40px;
+		@media (max-width: 375px) {
+			width: 293px;
+			font-size: 24px;
+		}
 	}
 	&.testimonialName {
 		font-size: 10px;

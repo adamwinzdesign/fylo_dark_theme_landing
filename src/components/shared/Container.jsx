@@ -36,13 +36,6 @@ const Container = styled.div`
 			max-width: 95%;
 		}
 	}
-	&.featuresSVGContain {
-		align-items: center;
-		justify-content: center;
-		/* width: 80px; */
-		/* height: 80px; */
-		border: 1px solid red;
-	}
 	&.teamText {
 		width: 563px;
 		height: 282px;
@@ -50,6 +43,10 @@ const Container = styled.div`
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
+		@media (max-width: 375px) {
+			/* width: 320px;
+			height: 500px; */
+		}
 	}
 	&.teamLinkContain {
 		display: flex;
@@ -72,6 +69,7 @@ const Container = styled.div`
 		align-items: flex-end;
 		justify-content: flex-end;
 		gap: 40px;
+		flex-wrap: wrap;
 	}
 	&.testimonialProfile {
 		width: 120px;

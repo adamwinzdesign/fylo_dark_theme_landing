@@ -32,6 +32,10 @@ const P = styled.p`
 		text-align: left;
 		line-height: 24px;
 		margin-top: 16px;
+		@media (max-width: 375px) {
+			font-size: 14px;
+			line-height: 21px;
+		}
 	}
 	&.testimonialText {
 		width: 310px;

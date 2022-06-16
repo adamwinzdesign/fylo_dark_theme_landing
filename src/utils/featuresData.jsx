@@ -1,5 +1,6 @@
-import { collaboration, security } from "./svgData";
 import anyFile from "../images/icon-any-file.svg";
+import security from "../images/icon-security.svg";
+import collaboration from "../images/icon-collaboration.svg";
 import accessAnywhere from "../images/icon-access-anywhere.svg";
 
 const featuresData = [
@@ -9,12 +10,12 @@ const featuresData = [
 		body: "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
 	},
 	{
-		pathData: security,
+		icon: security,
 		headline: "Security you can trust",
 		body: "2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.",
 	},
 	{
-		pathData: collaboration,
+		icon: collaboration,
 		headline: "Real-time collaboration",
 		body: "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.",
 	},
