@@ -11,7 +11,7 @@ const Content = () => {
 			<Hero />
 			<Features />
 			<Team />
-			<SignIn />
+			{/* <SignIn /> */}
 			<Footer />
 		</Container>
 	);

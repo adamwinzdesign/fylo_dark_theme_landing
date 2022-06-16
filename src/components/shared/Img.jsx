@@ -39,6 +39,7 @@ const Img = styled.img`
 		height: 18px;
 		width: 13px;
 		margin-right: 50px;
+		margin-top: 3px;
 	}
 	&.footerPhone {
 		height: 18px;

@@ -59,7 +59,10 @@ const P = styled.p`
 	&.footerText {
 		width: 339px;
 		font-size: 16px;
+		line-height: 24px;
+		margin: 0;
 		text-align: left;
+		border: 1px solid white;
 	}
 	&.contactText {
 		width: 110px;

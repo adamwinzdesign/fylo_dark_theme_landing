@@ -91,14 +91,21 @@ const Container = styled.div`
 		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
 	}
 	&.footer {
-		flex-direction: column;
+		flex-wrap: wrap;
 		width: 100%;
 		height: 441px;
 		background-color: ${dark_blue_footer};
 		padding: 170px 120px 0 120px;
 	}
 	&.footerLogo {
+		border: 1px solid yellow;
 		width: 100%;
+	}
+	&.footerLocation {
+		/* width: 379px; */
+		/* width: 50%; */
+		/* height: 73px; */
+		/* flex-direction: column; */
 	}
 	&.footerContent {
 		width: 100%;
