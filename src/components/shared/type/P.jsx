@@ -57,15 +57,16 @@ const P = styled.p`
 		color: ${light_red};
 	}
 	&.footerText {
+		margin: 0;
 		width: 339px;
 		font-size: 16px;
 		line-height: 24px;
-		margin: 0;
 		text-align: left;
 		border: 1px solid white;
 	}
 	&.contactText {
-		width: 110px;
+		margin: 0;
+		width: 124px;
 		font-size: 14px;
 		line-height: 21px;
 	}

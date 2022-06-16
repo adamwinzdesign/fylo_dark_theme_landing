@@ -112,8 +112,14 @@ const Container = styled.div`
 		border: 1px solid red;
 	}
 	&.footerContact {
-		flex-direction: column;
+		width: 171px;
+		height: 64px;
+		flex-wrap: wrap;
 		border: 1px solid green;
+	}
+	&.footerContactRow {
+		width: 100%;
+		justify-content: space-between;
 	}
 	&.footerLinks {
 		width: 230px;

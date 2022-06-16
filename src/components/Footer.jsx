@@ -29,7 +29,7 @@ const Footer = () => {
 						<P className='contactText'>+1-543-123-4567</P>
 					</Container>
 					<Container className='footerContactRow'>
-						<Img src={email} alt='location' className='footerEmail' />
+						<Img src={email} alt='email' className='footerEmail' />
 						<P className='contactText'>example@fylo.com</P>
 					</Container>
 				</Container>
