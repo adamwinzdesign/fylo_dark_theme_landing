@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { white } from "../../colors";
 
 const Img = styled.img`
 	&.hero {
