@@ -62,7 +62,6 @@ const P = styled.p`
 		font-size: 16px;
 		line-height: 24px;
 		text-align: left;
-		border: 1px solid white;
 	}
 	&.contactText {
 		margin: 0;

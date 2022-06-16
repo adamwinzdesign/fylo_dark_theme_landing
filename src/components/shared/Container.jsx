@@ -98,24 +98,17 @@ const Container = styled.div`
 		padding: 170px 120px 0 120px;
 	}
 	&.footerLogo {
-		border: 1px solid yellow;
 		width: 100%;
-	}
-	&.footerLocation {
-		/* width: 379px; */
-		/* width: 50%; */
-		/* height: 73px; */
-		/* flex-direction: column; */
 	}
 	&.footerContent {
 		width: 100%;
-		border: 1px solid red;
+		justify-content: space-between;
 	}
 	&.footerContact {
 		width: 171px;
 		height: 64px;
+		gap: 16px;
 		flex-wrap: wrap;
-		border: 1px solid green;
 	}
 	&.footerContactRow {
 		width: 100%;
@@ -126,10 +119,12 @@ const Container = styled.div`
 	}
 	&.footerLinksCol {
 		flex-direction: column;
+		width: 100px;
+		gap: 16px;
 	}
 	&.footerSocial {
 		height: 31px;
-		/* color: ${white}; */
+		gap: 12px;
 	}
 `;
 

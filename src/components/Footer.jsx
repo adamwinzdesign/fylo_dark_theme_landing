@@ -16,7 +16,7 @@ const Footer = () => {
 				<Img src={logo} alt='fylo' className='footerLogo' />
 			</Container>
 			<Container className='footerContent'>
-				<Container className='footerLocation'>
+				<Container>
 					<Img src={location} alt='location' className='footerLocation' />
 					<P className='footerText'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
