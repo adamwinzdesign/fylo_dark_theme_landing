@@ -16,12 +16,16 @@ const P = styled.p`
 		width: 296px;
 		font-size: 14px;
 		line-height: 21px;
+		margin-top: 24px;
 	}
 	&.features {
 		margin: 0;
 		width: 384px;
 		font-size: 14px;
 		line-height: 21px;
+		@media (max-width: 375px) {
+			width: 320px;
+		}
 	}
 	&.team {
 		font-size: 16px;

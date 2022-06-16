@@ -16,6 +16,12 @@ const GradientLink = styled(Link)`
 	font-size: 16px;
 	font-weight: 700;
 	color: ${white};
+	&.heroLink {
+		@media (max-width: 375px) {
+			height: 48px;
+			width: 240px;
+		}
+	}
 	&.signIn {
 		margin: 0;
 		width: 200px;

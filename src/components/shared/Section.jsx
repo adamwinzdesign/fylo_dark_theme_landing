@@ -22,6 +22,10 @@ const Section = styled.section`
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: space-between;
+		@media (max-width: 375px) {
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
 	}
 	&.team {
 		margin-top: 127px;

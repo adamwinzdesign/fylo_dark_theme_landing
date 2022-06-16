@@ -14,7 +14,7 @@ const Hero = () => {
 				Fylo stores all your most important files in one secure location. Access them wherever you
 				need, share and collaborate with friends, family, and co-workers.
 			</P>
-			<GradientLink to='signIn' spy={true} smooth={true}>
+			<GradientLink to='signIn' className='heroLink' spy={true} smooth={true}>
 				Get Started
 			</GradientLink>
 		</Section>

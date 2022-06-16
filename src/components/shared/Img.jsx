@@ -16,6 +16,14 @@ const Img = styled.img`
 		border-radius: 50%;
 		box-shadow: 0px 0px 2px rgba(98, 224, 217, 0.811141);
 	}
+	&.featuresImg {
+		height: 104px;
+		width: 104px;
+		@media (max-width: 375px) {
+			height: 70px;
+			width: 70px;
+		}
+	}
 	&.team {
 		width: 615px;
 		height: 464px;
