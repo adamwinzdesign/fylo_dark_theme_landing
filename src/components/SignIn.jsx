@@ -50,27 +50,29 @@ const SignIn = () => {
 
 	return (
 		<Container className='signIn'>
-			<H2 className='signIn'>Get early access today</H2>
-			<P className='signIn'>
-				It only takes a minute to sign up and our free starter tier is extremely generous. If you
-				have any questions, our support team would be happy to help you.
-			</P>
-			<Container>
-				<Form>
-					<label htmlFor='email'>
-						<Input
-							autoComplete='email'
-							type='email'
-							name='email'
-							value={formState.email}
-							onChange={inputChange}
-						/>
-						{errors.email && <P className='error'>{errors.email}</P>}
-					</label>
-					<GradientLink to='signIn' spy={true} smooth={true} className='signIn'>
-						Get Started For Free
-					</GradientLink>
-				</Form>
+			<Container className='signInContain'>
+				<H2 className='signIn'>Get early access today</H2>
+				<P className='signIn'>
+					It only takes a minute to sign up and our free starter tier is extremely generous. If you
+					have any questions, our support team would be happy to help you.
+				</P>
+				<Container>
+					<Form>
+						<label htmlFor='email'>
+							<Input
+								autoComplete='email'
+								type='email'
+								name='email'
+								value={formState.email}
+								onChange={inputChange}
+							/>
+							{errors.email && <P className='error'>{errors.email}</P>}
+						</label>
+						<GradientLink to='signIn' spy={true} smooth={true} className='signIn'>
+							Get Started For Free
+						</GradientLink>
+					</Form>
+				</Container>
 			</Container>
 		</Container>
 	);

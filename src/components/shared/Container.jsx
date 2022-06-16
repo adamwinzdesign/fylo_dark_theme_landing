@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cyan, dark_blue_footer } from "../../colors";
+import { cyan, dark_blue_footer, dark_blue_main } from "../../colors";
 import { white } from "../../colors";
 
 const Container = styled.div`
@@ -55,6 +55,7 @@ const Container = styled.div`
 	&.testimonialsContain {
 		position: relative;
 		margin-top: 120px;
+		margin-bottom: 100px;
 		height: 259px;
 		width: 1180px;
 		display: flex;
@@ -74,13 +75,20 @@ const Container = styled.div`
 		margin-left: 8px;
 	}
 	&.signIn {
-		height: 275px;
+		position: relative;
+		overflow: visible;
+	}
+	.signInContain {
+		position: relative;
+		transform: translateY(40%);
 		width: 863px;
 		padding: 42px 75px;
 		border-radius: 9px;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		background: ${dark_blue_main};
+		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
 	}
 	&.footer {
 		flex-direction: column;

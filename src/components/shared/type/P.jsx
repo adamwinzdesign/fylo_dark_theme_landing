@@ -49,6 +49,7 @@ const P = styled.p`
 		width: 673px;
 		font-size: 14px;
 		line-height: 21px;
+		margin-bottom: 40px;
 	}
 	&.error {
 		font-size: 10px;
