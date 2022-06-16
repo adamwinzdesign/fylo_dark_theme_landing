@@ -6,11 +6,15 @@ const Card = styled.div`
 	height: 200px;
 	width: 360px;
 	background: ${dark_blue_testimonials};
-	/* display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	justify-content: space-between; */
+	overflow: visible;
 	z-index: 2;
+	@media (max-width: 375px) {
+		height: 160px;
+		width: 280px;
+	}
 `;
 
 export default Card;

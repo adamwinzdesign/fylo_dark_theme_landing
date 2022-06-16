@@ -44,6 +44,12 @@ const P = styled.p`
 		line-height: 21px;
 		font-style: normal;
 		text-align: left;
+		@media (max-width: 375px) {
+			margin: 30px 20px 0 20px;
+			font-size: 10px;
+			line-height: 18px;
+			max-width: 240px;
+		}
 	}
 	&.testimonialPosition {
 		margin: 0;

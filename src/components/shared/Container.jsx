@@ -70,11 +70,20 @@ const Container = styled.div`
 		justify-content: flex-end;
 		gap: 40px;
 		flex-wrap: wrap;
+		overflow: visible;
+		@media (max-width: 375px) {
+			max-width: 280px;
+			height: auto;
+		}
 	}
 	&.testimonialProfile {
 		width: 120px;
 		margin-top: 24px;
 		margin-left: 24px;
+		@media (max-width: 375px) {
+			margin-top: 20px;
+			margin-left: 20px;
+		}
 	}
 	&.testimonialInfo {
 		width: 100px;

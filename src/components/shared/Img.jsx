@@ -33,6 +33,10 @@ const Img = styled.img`
 		position: absolute;
 		bottom: 72%;
 		left: 1%;
+		@media (max-width: 375px) {
+			bottom: 95%;
+			left: -5%;
+		}
 	}
 	&.testimonial {
 		height: 24px;
