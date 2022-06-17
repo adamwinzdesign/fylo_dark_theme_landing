@@ -27,6 +27,9 @@ const GradientLink = styled(Link)`
 		width: 200px;
 		height: 48px;
 		font-size: 14px;
+		@media (max-width: 375px) {
+			width: 280px;
+		}
 	}
 `;
 

@@ -46,6 +46,9 @@ const Img = styled.img`
 	&.footerLogo {
 		height: 31px;
 		width: 108px;
+		@media (max-width: 375px) {
+			margin-bottom: 24px;
+		}
 	}
 	&.footerLocation {
 		height: 18px;

@@ -64,6 +64,9 @@ const P = styled.p`
 		font-size: 14px;
 		line-height: 21px;
 		margin-bottom: 40px;
+		@media (max-width: 375px) {
+			width: 280px;
+		}
 	}
 	&.error {
 		font-size: 10px;

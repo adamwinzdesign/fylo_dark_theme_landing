@@ -43,10 +43,6 @@ const Container = styled.div`
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
-		@media (max-width: 375px) {
-			/* width: 320px;
-			height: 500px; */
-		}
 	}
 	&.teamLinkContain {
 		display: flex;
@@ -106,6 +102,11 @@ const Container = styled.div`
 		align-items: center;
 		background: ${dark_blue_main};
 		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+		@media (max-width: 375px) {
+			transform: translateY(0);
+			box-shadow: none;
+			max-width: 340px;
+		}
 	}
 	&.footer {
 		flex-wrap: wrap;
@@ -113,13 +114,29 @@ const Container = styled.div`
 		height: 441px;
 		background-color: ${dark_blue_footer};
 		padding: 170px 120px 0 120px;
+		@media (max-width: 375px) {
+			flex-direction: column;
+			min-height: 900px;
+			padding: 100px 28px;
+		}
 	}
 	&.footerLogo {
 		width: 100%;
+		@media (max-width: 375px) {
+			max-width: 320px;
+		}
+	}
+	&.footerLocation {
+		@media (max-width: 375px) {
+			width: 319px;
+		}
 	}
 	&.footerContent {
 		width: 100%;
 		justify-content: space-between;
+		@media (max-width: 375px) {
+			flex-direction: column;
+		}
 	}
 	&.footerContact {
 		width: 171px;
@@ -133,15 +150,25 @@ const Container = styled.div`
 	}
 	&.footerLinks {
 		width: 230px;
+		@media (max-width: 375px) {
+			flex-direction: column;
+		}
 	}
 	&.footerLinksCol {
 		flex-direction: column;
 		width: 100px;
 		gap: 16px;
+		@media (max-width: 375px) {
+			margin-top: 48px;
+		}
 	}
 	&.footerSocial {
 		height: 31px;
 		gap: 12px;
+		@media (max-width: 375px) {
+			margin-top: 48px;
+			margin: 48px auto 0 auto;
+		}
 	}
 `;
 

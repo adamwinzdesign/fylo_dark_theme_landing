@@ -23,6 +23,11 @@ const H2 = styled.h2`
 	&.signIn {
 		font-size: 32px;
 		line-height: 48px;
+		@media (max-width: 375px) {
+			font-size: 18px;
+			line-height: 24px;
+			width: 200px;
+		}
 	}
 `;
 
