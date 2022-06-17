@@ -9,17 +9,17 @@ export const hoverSVG = {
 		pathLength: [1.1, 0, 1.1],
 		transition: {
 			fill: {
-				duration: 4,
+				duration: 2,
 			},
 			fillOpacity: {
-				duration: 4,
+				duration: 2,
 				times: [0, 0.4, 0.5, 1],
 			},
 			stroke: {
-				duration: 4,
+				duration: 1.75,
 			},
 			pathLength: {
-				duration: 3.75,
+				duration: 1.75,
 				times: [0, 1],
 			},
 		},
