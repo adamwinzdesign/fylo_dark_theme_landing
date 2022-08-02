@@ -63,6 +63,7 @@ const SignIn = () => {
 								autoComplete='email'
 								type='email'
 								name='email'
+								id='email'
 								value={formState.email}
 								onChange={inputChange}
 							/>
